@@ -25,25 +25,28 @@ p + p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Lato', Georgia, sans-serif;
-  font-weight: normal;
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 100;
 }
 
 h1 {
   font-size: 3.157em;
   line-height: 1.1;
+  font-weight: 100;
 }
 
 h2 {
   font-size: 2.369em;
   line-height: 1.15;
   margin: 0 0 .54em;
+  font-weight: 100;
 }
 
 h3 { 
   font-size: 1.777em;
   line-height: 1.2;
   margin: .9em 0 .62em;
+  font-weight: 100;
 }
 h4{
   font-size: 1.4em;
@@ -106,8 +109,9 @@ a:hover, a:focus, a:active {
     margin-top:20px;
 }
 .hero-sec{
-    width:960px;
+    max-width:960px;
     margin:0 auto;
+    padding:0 2em;
 }
 .slogan{
     padding:0.2em 0.5em;
@@ -119,8 +123,8 @@ a:hover, a:focus, a:active {
     padding-top:1em;
     padding-bottom:.9em;
     line-height:1.4;
-    font-weight:200;
-    font-size: 3.45em;
+    font-weight:100;
+    font-size: 3.3em;
 }
 .slogan a{
     margin-right:1em;
@@ -129,11 +133,19 @@ a:hover, a:focus, a:active {
     max-width:960px;
     margin:0 auto;
     padding: 3em 5em;
+    text-align: center;
 }
 .item-sherbim{
     max-width:240px;
     text-align: center;
     flex-grow:1;
+    margin:0 .5em;
+}
+.item-sherbim h3{
+    font-weight: 100;
+}
+.item-sherbim p{
+    font-size: .9em;
 }
 .rreshti{
     display: -webkit-box;
@@ -147,6 +159,21 @@ a:hover, a:focus, a:active {
 }
 .item-sherbim p{
     color:#7D7D7D;
+}
+.gjitha{
+    padding:.5em .7em;
+    background-color:transparent;
+    border:2px solid #ECF0F1;
+    border-radius: 3px;
+    color: #ecf0f1;
+    text-transform: uppercase;
+}
+.gjitha:hover{
+    border-color:#2C3E50;
+    color:#2C3E50;
+}
+.shiko-gjitha{
+      margin-top: 4em;
 }
 .artikuj-wrap{
     background-color:#ECF0F1;
@@ -181,19 +208,20 @@ a:hover, a:focus, a:active {
 }
 a.kuote{
     background-color:#fff;
-    border:1px solid #fff;
+    border:2px solid #fff;
     border-radius:5px;
-    padding:.7em .5em;
+    padding:.7em 1em;
     color:#2C3E50 !important;
+    text-transform: uppercase;
 }
 a.kuote:hover{
     opacity:.96;
 }
 a.info{
     background-color:transparent;
-    border:1px solid #fff;
+    border:2px solid #fff;
     border-radius:5px;
-    padding:.7em .5em;
+    padding:.7em 1em;
     opacity: .8;
 }
 a.info:hover{
@@ -236,11 +264,12 @@ a.info:hover{
 .kerko-kuote a{
     background: transparent;
     border-radius: 5px;
-    padding:.5em .5em;
-    border:1px solid #fff;
+    padding:.5em 1em;
+    border:2px solid #fff;
     color:#fff;
     margin-left:3em;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    text-transform:uppercase;
 }
 .kerko-kuote a:hover{
     background: #fff;
@@ -250,8 +279,17 @@ a.info:hover{
 .footer-bot, .footer-top{
     padding:1em .3em;
 }
+.footer-top{
+    max-width: 960px;
+    margin:0 auto;
+    padding:5em;
+    display:flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
 .footer-bot{
     background-color:#ECF0F1;
+    color:#7f7f7f;
 }
 .footer-bot svg{
     margin-right:30px;
@@ -270,12 +308,57 @@ a.info:hover{
 	clear: both;
 	height: 0;
 }
-.footer-bot div, .footer-top div{
+.footer-bot div, .footer-top{
     max-width:960px;
     margin:0 auto;
+}
+.footer-top div{
+    display: inline-block;
+    margin-right:2em;
 }
 .footer-top section{
     max-width:350px;
 }
+.buletini{
+    width: 330px;
+}
+.buletini input{
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius:3px;
+}
+.buletini-text{
+    width:14em;
+    background: #FFFFFF;
+    border: 1px solid #BDC3C7;
+    padding:.3em .4em;
+}
+.buletini-text:focus, .buletini-dergo:focus{
+    outline:none;
+    border:1px solid #2C3E50;
+}
+.buletini-dergo{
+    width:15em;
+    margin-top:.5em;
+    background-color:#2C3E50;
+    color:#fff;
+    border:1px solid #2C3E50;
+    padding:.3em 0;
+}
+.buletini-dergo:hover{
+    background-color: #33495C; 
+}
 
 
+
+
+/* Media Queries */
+
+@media(max-width:768px){
+    body{
+        font-size:.8em;
+    }
+    .navigation{
+        display:none;
+    }
+}
