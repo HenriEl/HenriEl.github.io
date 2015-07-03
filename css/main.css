@@ -144,6 +144,12 @@ a:hover, a:focus, a:active {
 .item-sherbim h3{
     font-weight: 100;
 }
+.item-sherbim a{
+    color:#2C3E50;
+}
+.item-sherbim a:hover{
+    text-decoration: underline;
+}
 .item-sherbim p{
     font-size: .9em;
 }
@@ -161,6 +167,7 @@ a:hover, a:focus, a:active {
     color:#7D7D7D;
 }
 .gjitha{
+    font-size:.8em;
     padding:.5em .7em;
     background-color:transparent;
     border:2px solid #ECF0F1;
@@ -182,16 +189,10 @@ a:hover, a:focus, a:active {
     max-width:960px;
     margin:0 auto;
     padding: 3em 5em;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
 }
 .artikujt article{
-    width:330px;
+    width:100%;
+    margin-bottom:3em;
 }
 .artikujt img{
     width:100%;
@@ -282,10 +283,13 @@ a.info:hover{
 .footer-top{
     max-width: 960px;
     margin:0 auto;
-    padding:5em;
+    padding:2.5em 0;
     display:flex;
     justify-content: space-around;
     -webkit-justify-content: space-around;
+}
+.footer-top p{
+    color:#7f7f7f;
 }
 .footer-bot{
     background-color:#ECF0F1;
@@ -348,15 +352,132 @@ a.info:hover{
 .buletini-dergo:hover{
     background-color: #33495C; 
 }
+/* Sherbimet */
+.menu-sherb{
+    width:100px;
+    border-radius: 3px;
+    border:1px solid #eee;
+    position:fixed;
+    top:180px;
+    left:50px;
+    padding:2em 2em 2em 1em;
+    background-color:#fff;
+}
+.sherbimet-faqja{
+    max-width:960px;
+    margin:0 auto;
+    padding:5em;
+}
+.footer-top{
+    clear:both;
+}
+.sherbimet-b{
+    max-width:80%;
+    margin:0 auto;
+    float:right;
+    border-left:1px solid #eee;
+    padding-left:3em;
+}
+/* Faqja Blog*/
+.faqe-blog{
+    max-width:960px;
+    margin:0 auto;
+}
+/* Kuota Popup */
 
-
-
-
+.kuota{
+    position:fixed;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    background-color:rgba(0,0,0,.5);
+    display:none;
+}
+.kuota-b{
+    max-width:450px;
+    margin:0 auto;
+    background-color:#fff;
+    padding:1em;
+}
+.kuota select{
+    font-size: .8em;
+    background-color: transparent;
+    height: 2em;
+}
+.kuota select:focus, 
+.kuota input:focus, 
+.kuota textarea:focus{
+    outline: none;
+    border-color:#7f7f7f;
+}
+.kuota input{
+  margin: 1em 0 1em 1em;
+  padding: .5em .7em;
+  font-size: .8em;
+  width: 9em;
+}
+.kuota-mbyll{
+    color:#fff;
+    max-width:350px;
+    margin:0 auto;
+    text-align:center;
+    margin-top:1em;
+}
+.kuota label{
+    width:300px;
+}
+.kuota input, .kuota select{
+    margin:1em 0 1em 1em;
+    border:1px solid #ccc;
+}
+.kuota textarea{
+    max-width: 450px;
+    min-width: 450px;
+    min-height:100px;
+}
+.kuota-dergo{
+    background-color:#2C3E50;
+    color:#fff;
+    border-radius: 3px;
+    border:2px solid #2C3E50;
+    width: 160px !important;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .7em .9em !important;
+    margin-left: 296px !important;
+}
+.kuota-dergo:hover{
+    color:#2C3E50;
+    background: transparent;
+}
+/* Faqja Postimeve*/
+.post-wrap{
+    width:960px;
+    margin:0 auto;
+    padding:2em 3em 4em 3em;
+}
+.post-meta{
+    color:#7f7f7f;
+    margin-bottom:1em;
+}
+/* Hero 2*/
+.hero2{
+    height:90px;
+}
 /* Media Queries */
 
 @media(max-width:768px){
     body{
         font-size:.8em;
+    }
+    .navigation{
+        display:none;
+    }
+}
+@media(max-width:480px){
+    body{
+        font-size:.7em;
     }
     .navigation{
         display:none;

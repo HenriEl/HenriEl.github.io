@@ -11,7 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+  <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
   <script src="/js/parallax.min.js"></script>
   <script src="/js/jquery.typer.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans' rel='stylesheet' type='text/css'>
@@ -28,11 +28,11 @@
         <a class="site-title" href="/">eDesign</a>
         <nav class="navigation">
             <ul>
-                <li><a href="#">Kreu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Rreth Nesh</a></li>
-                <li><a href="#">Punimet</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="/">Kreu</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/rreth_nesh.html">Rreth Nesh</a></li>
+                <li><a href="javascript:alert('Faqja 'Punimet' do te krijohet se shpejti!);">Punimet</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
         <div class="slogan">
@@ -44,7 +44,7 @@
       });
     </script>
             <a href="#" class="kuote">Kerko Kuote</a>
-            <a href="#" class="info">Me Shume Info</a>
+            <a href="/sherbimet.html" class="info">Me Shume Info</a>
         </div>
     </section>
 </header>
@@ -52,7 +52,35 @@
     <div class="main-wrapper">
         <div class="page-content">
           <div class="wrapper">
-            <section class="sherbimet">
+            <section class="kuota">
+    <div class="kuota-b">
+        <h3>Plotesoni fushat</h3>
+        <form action="https://getsimpleform.com/messages?form_api_token=e01fad58e405faa9c99ecf3a84cde01d" method="post">
+              <input type='hidden' name='redirect_to' value='#' />
+              <label>Emer & Mbiemer: </label>
+              <input class="kuota-text" type='text' name='email' placeholder="Emer.."/>
+              <input class="kuota-text" type='text' name='email' placeholder="Mbiemer.."/><br/>
+            <label>Sherbimi: </label>
+            <select>
+                <option>Faqe Interneti</option>
+                <option>E-Commerce</option>
+                <option>Marketing Online</option>
+                <option>SEO</option>
+                <option>Landing Page</option>
+                <option>Tjeter</option>
+            </select><br/>
+              <label>Email: </label>
+              <input class="kuota-text" type='text' name='email' placeholder="emer@email.com"/><br/>
+              <label>Pershkrimi i punes</label><br/>
+              <textarea></textarea><br/>
+              <input class="kuota-dergo" type='submit' value='Regjistrou' />
+        </form>
+    </div>
+    <div class="kuota-mbyll">
+        Mbyll
+    </div>
+</section>
+<section class="sherbimet">
     <div class="rreshti">
         <div class="item-sherbim">
             <svg width="50px" height="53px" viewBox="0 0 50 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -66,7 +94,7 @@
                     </g>
                 </g>
             </svg>
-            <h3>Dizenjim Web</h3>
+            <a href="#"><h3>Dizenjim Web</h3></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
         <div class="item-sherbim">
@@ -81,7 +109,7 @@
         </g>
     </g>
 </svg>
-            <h3>SEO</h3>
+            <a href="#"><h3>SEO</h3></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
     </div>
@@ -98,7 +126,7 @@
         </g>
     </g>
 </svg>
-            <h3>Marketing Online</h3>
+            <a href="#"><h3>Marketing Online</h3></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
         <div class="item-sherbim">
@@ -113,12 +141,12 @@
         </g>
     </g>
 </svg>
-            <h3>E-Commerce</h3>
+            <a href="#"><h3>E-Commerce</h3></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
     </div>
     <div class="shiko-gjitha">
-        <a href="#" class="gjitha">Shiko te Gjitha</a>
+        <a href="/sherbimet.html" class="gjitha">Shiko te Gjitha</a>
     </div>    
 </section>
 <div class="artikuj-wrap">
@@ -220,7 +248,7 @@
 <div class="parallax-window" data-parallax="scroll" data-image-src="/images/kerko.jpg" >
     <div class="kerko-kuote">
         <h2>Gati per te filluar projektin tuaj me ne?</h2>
-        <a href="kuote-btn">Kerko Kuote</a>
+        <a class="kuote-btn">Kerko Kuote</a>
     </div>
 </div>
 <script src='/js/scrollReveal.min.js'></script>
@@ -289,10 +317,22 @@
 </svg>
             <p>eDesign Copyright 2015</p>
         </div>
-        
     </div>
 </footer>
+<script type="text/javascript">
+    $('.kuote').click(function(){
+        $('.kuota').fadeIn(250);             
+    });
+    $('.kuote-btn').click(function(){
+        $('.kuota').fadeIn(250);             
+    });
+    $('.kuota-mbyll').click(function(){
+        $('.kuota-b').slideUp();
+        $('.kuota').fadeOut(250);
+        $('.kuota-b').slideDown();
+    });
 
+</script>
 
   </body>
 
