@@ -41,7 +41,37 @@
     <div class="main-wrapper">
         <div class="page-content">
           <div class="wrapper">
-            
+            <section class="kuota">
+    <div class="kuota-b">
+        <h3>Plotesoni fushat</h3>
+        <form action="https://getsimpleform.com/messages?form_api_token=e01fad58e405faa9c99ecf3a84cde01d" method="post">
+              <input type='hidden' name='redirect_to' value='#' />
+              <input class="kuota-text" type='text' name='email' placeholder="Emer.."/>
+              <input class="kuota-text" type='text' name='email' placeholder="Mbiemer.."/>
+            <input class="kuota-text" type='text' name='email' placeholder="Nr Kontakti.."/>
+            <select>
+                <option>Faqe Interneti</option>
+                <option>E-Commerce</option>
+                <option>Marketing Online</option>
+                <option>SEO</option>
+                <option>Landing Page</option>
+                <option>Tjeter</option>
+            </select><br/>
+              <input class="kuota-text" type='text' name='email' placeholder="Email.."/>
+              <textarea></textarea>
+              <input class="kuota-dergo" type='submit' value='Dergo' />
+        </form>
+    </div>
+</section>
+<style>
+    .kuota{
+        display:block;
+        position:static;
+    }
+    .kuota-b{
+        display:block;
+    }
+</style>
           </div>
         </div>
     </div>
@@ -108,7 +138,8 @@
 </footer>
 <script type="text/javascript">
     $('.kuote').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
         $('.kuota').fadeIn(250);             
@@ -116,9 +147,10 @@
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();
         $('.kuota').fadeOut(250);
-        $('.kuota-b').slideDown();
     });
-
+    $('.hap-menu').click(function(){
+        $('.menu-anash').fadeToggle();
+    });
 </script>
 
   </body>

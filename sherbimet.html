@@ -44,7 +44,7 @@
             <div class="menu-sherb">
     <ul>
         <li><a href="">Item 1</a></li>
-        <li><a href="#ecom">Item 2</a></li>
+        <li><a href="">Item 2</a></li>
         <li><a href="">Item 3</a></li>
         <li><a href="">Item 4</a></li>
         <li><a href="">Item 5</a></li>
@@ -138,7 +138,8 @@
 </footer>
 <script type="text/javascript">
     $('.kuote').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
         $('.kuota').fadeIn(250);             
@@ -146,9 +147,10 @@
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();
         $('.kuota').fadeOut(250);
-        $('.kuota-b').slideDown();
     });
-
+    $('.hap-menu').click(function(){
+        $('.menu-anash').fadeToggle();
+    });
 </script>
 
   </body>

@@ -48,7 +48,17 @@
         </div>
     </section>
 </header>
-
+<div class="hap-menu">Hap</div>
+<div class="menu-anash">
+    <div class="hap-menu">X</div>
+    <ul>
+        <li>Item of the menu</li>
+        <li>Item of the menu</li>
+        <li>Item of the menu</li>
+        <li>Item of the menu</li>
+        <li>Item of the menu</li>
+    </ul>
+</div>
     <div class="main-wrapper">
         <div class="page-content">
           <div class="wrapper">
@@ -57,10 +67,9 @@
         <h3>Plotesoni fushat</h3>
         <form action="https://getsimpleform.com/messages?form_api_token=e01fad58e405faa9c99ecf3a84cde01d" method="post">
               <input type='hidden' name='redirect_to' value='#' />
-              <label>Emer & Mbiemer: </label>
               <input class="kuota-text" type='text' name='email' placeholder="Emer.."/>
-              <input class="kuota-text" type='text' name='email' placeholder="Mbiemer.."/><br/>
-            <label>Sherbimi: </label>
+              <input class="kuota-text" type='text' name='email' placeholder="Mbiemer.."/>
+            <input class="kuota-text" type='text' name='email' placeholder="Nr Kontakti.."/>
             <select>
                 <option>Faqe Interneti</option>
                 <option>E-Commerce</option>
@@ -69,11 +78,9 @@
                 <option>Landing Page</option>
                 <option>Tjeter</option>
             </select><br/>
-              <label>Email: </label>
-              <input class="kuota-text" type='text' name='email' placeholder="emer@email.com"/><br/>
-              <label>Pershkrimi i punes</label><br/>
-              <textarea></textarea><br/>
-              <input class="kuota-dergo" type='submit' value='Regjistrou' />
+              <input class="kuota-text" type='text' name='email' placeholder="Email.."/>
+              <textarea placeholder="Pershkrimi i projektit.. "></textarea>
+              <input class="kuota-dergo" type='submit' value='Dergo' />
         </form>
     </div>
     <div class="kuota-mbyll">
@@ -321,7 +328,8 @@
 </footer>
 <script type="text/javascript">
     $('.kuote').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
         $('.kuota').fadeIn(250);             
@@ -329,9 +337,10 @@
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();
         $('.kuota').fadeOut(250);
-        $('.kuota-b').slideDown();
     });
-
+    $('.hap-menu').click(function(){
+        $('.menu-anash').fadeToggle();
+    });
 </script>
 
   </body>

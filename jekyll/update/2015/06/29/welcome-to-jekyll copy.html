@@ -133,7 +133,8 @@
 </footer>
 <script type="text/javascript">
     $('.kuote').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
         $('.kuota').fadeIn(250);             
@@ -141,9 +142,10 @@
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();
         $('.kuota').fadeOut(250);
-        $('.kuota-b').slideDown();
     });
-
+    $('.hap-menu').click(function(){
+        $('.menu-anash').fadeToggle();
+    });
 </script>
 
   </body>
