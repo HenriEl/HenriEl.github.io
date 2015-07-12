@@ -141,6 +141,7 @@ a:hover, a:focus, a:active {
     text-align: center;
     flex-grow:1;
     margin:0 .5em;
+    margin-top:60px;
 }
 .item-sherbim h3{
     font-weight: 100;
@@ -162,7 +163,6 @@ a:hover, a:focus, a:active {
     display: flex;
     justify-content: space-around;
     -webkit-justify-content: space-around;
-    margin-top:60px;
 }
 .item-sherbim p{
     color:#7D7D7D;
@@ -239,6 +239,7 @@ a.info:hover{
     max-width:960px;
     margin:0 auto;
     padding-bottom:4em;
+    padding-top:7em;
 }
 .item-sherb{
     width:260px;
@@ -264,23 +265,24 @@ a.info:hover{
     margin:0 auto;
     padding:5em .5em;
     color:#fff;
-}
-.kerko-kuote *{
-    display:inline-block;
+    text-align: center;
 }
 .kerko-kuote a{
     background: transparent;
     border-radius: 5px;
-    padding:.5em 1em;
-    border:2px solid #fff;
-    color:#fff;
-    margin-left:3em;
-    font-size: 1.3em;
-    text-transform:uppercase;
+    padding: .7em 1.2em;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 3em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 .kerko-kuote a:hover{
     background: #fff;
     color:#7d7d7d;
+}
+.kerko-kuote h2{
+    margin-bottom:1.5em;
 }
 /* Footer Styling */
 .footer-bot, .footer-top{
@@ -398,6 +400,72 @@ a.info:hover{
     max-width:960px;
     margin:0 auto;
 }
+/* Portfolio */
+.clearfix{
+    clear:both;
+}
+.punimet-wrap{
+    max-width:960px;
+    margin:0 auto;
+    padding-top:2em;
+    text-align: center;
+}
+.punimet-wrap h1{
+    line-height: .1;
+}
+.portfolio-nav{
+    display:flex;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-o-flex;
+    justify-content: center;
+    margin-top:4em;
+    margin-bottom:-1em;
+}
+.portfolio-nav ul{
+    list-style:none;
+    display:flex;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-o-flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.portfolio-nav ul li a{
+    height:3em;
+    display:block;
+    font-size:15px;
+    color:#7d7d7d;
+    padding:1em;
+    text-decoration:none;
+}
+.portfolio-nav li a.selected{
+    color:#444;
+}
+.portfolio{
+    display:flex;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-o-flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;;
+}
+.punim{
+    display:block;
+    margin:.8em;
+    cursor:pointer;
+    padding:.3em;
+}
+.punim h5{
+    display:none;
+}
+.punim img{
+    width:17.5em;
+    height:13em;
+}
+
+
+
 /* Kuota Popup */
 
 .kuota{
@@ -415,6 +483,8 @@ a.info:hover{
     background-color:#fff;
     padding:1em;
     display:none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .kuota select{
     font-size: .9em;
@@ -447,6 +517,7 @@ a.info:hover{
 }
 .kuota input, .kuota select{
     margin: .8em 0 .8em .8em;
+    border-radius: 3px;
     border:1px solid #ccc;
 }
 .kuota textarea{
@@ -456,6 +527,8 @@ a.info:hover{
     min-height: 100px;
     padding: 10px;
     font-size:.9em;
+    border:1px solid #ccc;
+    border-radius:3px;
 }
 .kuota-dergo{
     background-color:#2C3E50;
@@ -527,5 +600,25 @@ a.info:hover{
     }
     .navigation{
         display:none;
+    }
+    .rreshti{
+        display: block;
+    }
+    .footer-top{
+        display:block;
+    }
+    .footer-top div{
+        display:block;
+        width:100%;
+        padding:.5em .7em;
+    }
+    .item-sherb{
+        margin: 0 auto;
+    }
+    .hero-image{
+        height:38em;
+    }
+    .hero2{
+        height:90px;
     }
 }

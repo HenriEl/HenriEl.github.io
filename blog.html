@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="/css/main.css">
   <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
   <script src="/js/parallax.min.js"></script>
+  <script src="/js/isotope.js"></script>
   <script src="/js/jquery.typer.js"></script>
+  <script src="/js/scripts.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="http://henriel.github.io/blog.html">
   <link rel="alternate" type="application/rss+xml" title="eDesign" href="http://henriel.github.io/feed.xml" />
@@ -135,7 +137,8 @@
         $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();            
     });
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();

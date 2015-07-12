@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="/css/main.css">
   <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
   <script src="/js/parallax.min.js"></script>
+  <script src="/js/isotope.js"></script>
   <script src="/js/jquery.typer.js"></script>
+  <script src="/js/scripts.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="http://henriel.github.io/kontakt.html">
   <link rel="alternate" type="application/rss+xml" title="eDesign" href="http://henriel.github.io/feed.xml" />
@@ -44,12 +46,12 @@
             <section class="kuota">
     <div class="kuota-b">
         <h3>Plotesoni fushat</h3>
-        <form action="https://getsimpleform.com/messages?form_api_token=e01fad58e405faa9c99ecf3a84cde01d" method="post">
+        <form role="form" action="https://getsimpleform.com/messages?form_api_token=e01fad58e405faa9c99ecf3a84cde01d" method="post" enctype="multipart/form-data">
               <input type='hidden' name='redirect_to' value='#' />
-              <input class="kuota-text" type='text' name='email' placeholder="Emer.."/>
-              <input class="kuota-text" type='text' name='email' placeholder="Mbiemer.."/>
-            <input class="kuota-text" type='text' name='email' placeholder="Nr Kontakti.."/>
-            <select>
+              <input class="kuota-text" type='text' name='Emri' placeholder="Emer.."/>
+              <input class="kuota-text" type='text' name='Mbiemri' placeholder="Mbiemer.."/>
+            <input class="kuota-text" type='text' name='Nr Kontakti' placeholder="Nr Kontakti.."/>
+            <select name="Sherbimi">
                 <option>Faqe Interneti</option>
                 <option>E-Commerce</option>
                 <option>Marketing Online</option>
@@ -58,7 +60,7 @@
                 <option>Tjeter</option>
             </select><br/>
               <input class="kuota-text" type='text' name='email' placeholder="Email.."/>
-              <textarea></textarea>
+              <textarea name="Pershkrimi"></textarea>
               <input class="kuota-dergo" type='submit' value='Dergo' />
         </form>
     </div>
@@ -67,6 +69,7 @@
     .kuota{
         display:block;
         position:static;
+        background-color:transparent;
     }
     .kuota-b{
         display:block;
@@ -142,7 +145,8 @@
         $('.kuota-b').slideDown();
     });
     $('.kuote-btn').click(function(){
-        $('.kuota').fadeIn(250);             
+        $('.kuota').fadeIn(250);  
+        $('.kuota-b').slideDown();            
     });
     $('.kuota-mbyll').click(function(){
         $('.kuota-b').slideUp();
