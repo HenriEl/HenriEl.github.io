@@ -283,21 +283,23 @@ $(document).ready(function(){
   $grid.isotope({
       // options
       itemSelector: '.punim',
-      filter: '.web'
+      filter: '*',
+      layoutMode: 'fitRows'
   });
   $('.portfolio-nav>ul>li>a').click(function(e){
       e.preventDefault();
       $('.portfolio-nav .selected').removeClass('selected');
       $(this).addClass('selected');
-  });  
-  var selektuar = $(this).attr('data-filter');
+      var selektuar = $(this).attr('data-filter');
   $grid.isotope({
     filter: selektuar,
       animationOptions: {
-        duration: 750,
-          easing: 'linear',
-          queqe: false
-      }
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
   });
+  });  
+  
     return false;
 });

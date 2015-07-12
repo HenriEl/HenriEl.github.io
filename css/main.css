@@ -429,7 +429,7 @@ a.info:hover{
     display:-moz-flex;
     display:-o-flex;
     -webkit-flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .portfolio-nav ul li a{
     height:3em;
