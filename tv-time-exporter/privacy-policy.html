@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — TV Time Data Extractor</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      body {
+        font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 20px 60px;
+        color: #1a1a1a;
+        line-height: 1.6;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin-top: 2rem;
+      }
+      .updated {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      code {
+        background: #f2f2f2;
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
+      a {
+        color: #16a34a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy — TV Time Data Extractor</h1>
+    <p class="updated">Last updated: 22 June 2026</p>
+
+    <p>
+      TV Time Data Extractor (“the extension”) is a browser tool that lets you
+      export <strong>your own</strong> TV Time data to a CSV file on your
+      computer. This policy explains what it does and doesn’t do with your
+      information.
+    </p>
+
+    <h2>Summary</h2>
+    <p>
+      The extension runs entirely in your browser. It does <strong>not</strong>
+      send your data to us or to any third-party server, it does
+      <strong>not</strong> store your data, and it does <strong>not</strong>
+      track you. There are no analytics and no accounts.
+    </p>
+
+    <h2>What the extension accesses</h2>
+    <p>
+      When you click <strong>Export to CSV</strong> while signed in to
+      tvtime.com, the extension:
+    </p>
+    <ol>
+      <li>
+        Reads your signed-in TV Time session token from the TV Time page so it
+        can request your data on your behalf.
+      </li>
+      <li>
+        Calls TV Time’s own endpoints (the same ones the TV Time website uses)
+        to retrieve <strong>your</strong> watched shows, episodes and movies.
+      </li>
+      <li>Converts that data into a CSV file in memory.</li>
+      <li>Triggers a download of that CSV to your device.</li>
+    </ol>
+    <p>That is the full extent of its data handling.</p>
+
+    <h2>What we collect</h2>
+    <p>
+      <strong>Nothing.</strong> The extension has no backend server. Your TV
+      Time data and session token are used only locally, in your browser, for
+      the duration of the export. None of it is transmitted to the developer or
+      any other party, and none of it is retained by the extension after the
+      export finishes.
+    </p>
+
+    <h2>Permissions and why they are needed</h2>
+    <ul>
+      <li>
+        <strong>Host access to <code>tvtime.com</code></strong> — to read your
+        data from your logged-in TV Time session.
+      </li>
+      <li>
+        <strong><code>scripting</code> / <code>activeTab</code></strong> — to
+        run the export logic in the TV Time tab you have open.
+      </li>
+      <li>
+        <strong><code>downloads</code></strong> — to save the resulting CSV file
+        to your device.
+      </li>
+      <li>
+        <strong><code>tabs</code></strong> — to detect that the active tab is TV
+        Time before exporting.
+      </li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>
+      We do not sell, share, or transfer any user data. We never receive it in
+      the first place.
+    </p>
+
+    <h2>Third parties</h2>
+    <p>
+      The extension communicates only with TV Time’s servers, using your own
+      session, to retrieve your data. It is an <strong>unofficial</strong> tool
+      and is <strong>not affiliated with, endorsed by, or sponsored by</strong>
+      TV Time or its owners. “TV Time” is a trademark of its respective owner.
+    </p>
+
+    <h2>Your control</h2>
+    <p>
+      The extension only does anything when you click <strong>Export to
+      CSV</strong>. You can remove it at any time from
+      <code>chrome://extensions</code>, which ends all access immediately.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy:
+      <a href="mailto:henri@bingeboxd.com">henri@bingeboxd.com</a>
+    </p>
+  </body>
+</html>
